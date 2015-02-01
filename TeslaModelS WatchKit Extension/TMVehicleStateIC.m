@@ -17,20 +17,16 @@
 @implementation TMVehicleStateIC
 
 
-- (instancetype)initWithContext:(id)context {
-    self = [super initWithContext:context];
-    if (self) {
-        // Initialize variables here.
-        // Configure interface objects here.
-        NSLog(@"%@ initWithContext", self);
-
-        isLocked = NO;
-
-        [self getVehicleState];
-    }
-    return self;
+- (void)awakeWithContext:(id)context {
+    [super awakeWithContext:context];
+    
+    // Configure interface objects here.
+    NSLog(@"%@ awakeWithContext", self);
+    
+    isLocked = NO;
+    
+    [self getVehicleState];
 }
-
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user

@@ -12,16 +12,13 @@
 @implementation TMLocationIC
 
 
-- (instancetype)initWithContext:(id)context {
-    self = [super initWithContext:context];
-    if (self) {
-        // Initialize variables here.
-        // Configure interface objects here.
-        NSLog(@"%@ initWithContext", self);
+- (void)awakeWithContext:(id)context {
+    [super awakeWithContext:context];
+    // Initialize variables here.
+    // Configure interface objects here.
+    NSLog(@"%@ awakeWithContext", self);
 
-        [self getVehicleState];
-    }
-    return self;
+    [self getVehicleState];
 }
 
 
@@ -59,8 +56,8 @@
 
         MKCoordinateSpan span = MKCoordinateSpanMake(0.005f, 0.005f);
         CLLocationCoordinate2D location = CLLocationCoordinate2DMake(model.latitude, model.longitude);
-        [self.mapVehicleLocation setCoordinateRegion:MKCoordinateRegionMake(location, span)];
-        [self.mapVehicleLocation addAnnotation:location withImageNamed:@"map_place_icon"];
+        [self.mapVehicleLocation setRegion:MKCoordinateRegionMake(location, span)];
+        [self.mapVehicleLocation addAnnotation:location withImageNamed:@"map_place_icon" centerOffset:CGPointMake(0, 0)];
     }];
 }
 
