@@ -11,19 +11,12 @@
 
 @implementation TMSunRoofStateIC
 
-
-- (instancetype)initWithContext:(id)context {
-    self = [super initWithContext:context];
-    if (self) {
-        // Initialize variables here.
-        // Configure interface objects here.
-        NSLog(@"%@ initWithContext", self);
-
-        roofState = (VehicleRoofState) [context[@"roofState"] integerValue];
-    }
-    return self;
+- (void)awakeWithContext:(id)context {
+    [super awakeWithContext:context];
+    NSLog(@"%@ awakeWithContext", self);
+    
+    roofState = (VehicleRoofState) [context[@"roofState"] integerValue];
 }
-
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user

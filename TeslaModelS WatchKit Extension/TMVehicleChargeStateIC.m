@@ -11,17 +11,13 @@
 
 @implementation TMVehicleChargeStateIC
 
-
-- (instancetype)initWithContext:(id)context {
-    self = [super initWithContext:context];
-    if (self) {
-        // Initialize variables here.
-        // Configure interface objects here.
-        NSLog(@"%@ initWithContext", self);
-        chargeLimit = 75;
-        [self getVehicleState];
-    }
-    return self;
+- (void)awakeWithContext:(id)context {
+    [super awakeWithContext:context];
+    // Initialize variables here.
+    // Configure interface objects here.
+    NSLog(@"%@ awakeWithContext", self);
+    chargeLimit = 75;
+    [self getVehicleState];
 }
 
 

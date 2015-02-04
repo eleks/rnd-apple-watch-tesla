@@ -4,7 +4,7 @@
       "extent" : "full-screen",
       "idiom" : "watch",
       "subtype" : "38mm",
-      "filename" : "splash_38mm@2x.png",
+      "filename" : "38mm Tesla Logo@2x.png",
       "minimum-system-version" : "8.0",
       "orientation" : "portrait",
       "scale" : "2x"
@@ -13,7 +13,7 @@
       "extent" : "full-screen",
       "idiom" : "watch",
       "subtype" : "42mm",
-      "filename" : "splash_42mm@2x.png",
+      "filename" : "42mm Tesla Logo@2x.png",
       "minimum-system-version" : "8.0",
       "orientation" : "portrait",
       "scale" : "2x"
