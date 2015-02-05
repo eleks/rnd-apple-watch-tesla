@@ -53,7 +53,10 @@
         MKCoordinateSpan span = MKCoordinateSpanMake(0.005f, 0.005f);
         CLLocationCoordinate2D location = CLLocationCoordinate2DMake(model.latitude, model.longitude);
         [self.mapVehicleLocation setRegion:MKCoordinateRegionMake(location, span)];
-        [self.mapVehicleLocation addAnnotation:location withImage:[UIImage imageNamed:@"map_place_icon"] centerOffset:CGPointMake(0.0f, 0.0f)];
+        UIImage *image = [UIImage imageNamed:@"map_place_icon@2x"];
+        if (image) {
+            [self.mapVehicleLocation addAnnotation:location withImage:image centerOffset:CGPointMake(0.0f, 0.0f)];
+        }
     }];
 }
 
