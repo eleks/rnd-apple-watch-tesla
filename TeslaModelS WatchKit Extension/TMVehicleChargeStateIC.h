@@ -16,15 +16,15 @@
     NSInteger chargeLimit;
 }
 
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblChargingState;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblChargePercent;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblChargeRange;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblChargingTime;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblRangeTitle;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblChargeLimitTitle;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblChargeLimit;
-@property (strong, nonatomic) IBOutlet WKInterfaceGroup *groupCurrentCharge;
-@property (strong, nonatomic) IBOutlet WKInterfaceGroup *groupTotalCharge;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblChargingState;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblChargePercent;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblChargeRange;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblChargingTime;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblRangeTitle;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblChargeLimitTitle;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblChargeLimit;
+@property (weak, nonatomic) IBOutlet WKInterfaceGroup *groupCurrentCharge;
+@property (weak, nonatomic) IBOutlet WKInterfaceGroup *groupTotalCharge;
 
 - (IBAction)btnChargeLimitDownTouch;
 - (IBAction)btnChargeLimitUpTouch;

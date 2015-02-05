@@ -17,10 +17,10 @@
     float passengerTemperature;
 }
 
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblDriversZone;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblPassengersZone;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblDriverZoneTemperature;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblPassengerZoneTemperature;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblDriversZone;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblPassengersZone;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblDriverZoneTemperature;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblPassengerZoneTemperature;
 
 - (IBAction)btnDriverTemperatureDown;
 - (IBAction)btnDriverTemperatureUp;

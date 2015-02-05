@@ -17,14 +17,15 @@
     BOOL isLocked;
 }
 
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblChargingState;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblChargePercent;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblChargeRange;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblChargingTime;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblLockState;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblOutsideTemperature;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblRangeTitle;
-@property (strong, nonatomic) IBOutlet WKInterfaceGroup *groupCurrentCharge;
-@property (strong, nonatomic) IBOutlet WKInterfaceGroup *groupTotalCharge;
-@property (strong, nonatomic) IBOutlet WKInterfaceButton *btnVehicleState;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblChargingState;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblChargePercent;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblChargeRange;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblChargingTime;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblLockState;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblOutsideTemperature;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblRangeTitle;
+@property (weak, nonatomic) IBOutlet WKInterfaceGroup *groupCurrentCharge;
+@property (weak, nonatomic) IBOutlet WKInterfaceGroup *groupTotalCharge;
+@property (weak, nonatomic) IBOutlet WKInterfaceButton *btnVehicleState;
+
 @end
