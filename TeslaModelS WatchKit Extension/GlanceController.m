@@ -17,12 +17,12 @@
 @implementation GlanceController
 
 
-- (instancetype)initWithContext:(id)context {
-    self = [super initWithContext:context];
+- (instancetype)init {
+    self = [super init];
     if (self) {
         // Initialize variables here.
         // Configure interface objects here.
-        NSLog(@"%@ initWithContext", self);
+        NSLog(@"%@ init", self);
 
         [self getVehicleState];
     }

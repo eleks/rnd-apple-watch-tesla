@@ -12,27 +12,21 @@
 @implementation TMTemperatureIC
 
 
-- (instancetype)initWithContext:(id)context {
-    self = [super initWithContext:context];
-    if (self) {
-        // Initialize variables here.
-        // Configure interface objects here.
-        NSLog(@"%@ initWithContext", self);
-
-        [self.lblDriversZone setAttributedText:[[NSAttributedString alloc] initWithString:@"Driver's zone" attributes:@{NSFontAttributeName : SanFranciscoFontWithSize9}]];
-        [self.lblPassengersZone setAttributedText:[[NSAttributedString alloc] initWithString:@"Passenger's zone" attributes:@{NSFontAttributeName : SanFranciscoFontWithSize9}]];
-
-        if (context) {
-            driverTemperature = [context[@"driverTemperature"] floatValue];
-            passengerTemperature = [context[@"passengerTemperature"] floatValue];
-
-            [self.lblDriverZoneTemperature setAttributedText:[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%.0f", driverTemperature] attributes:@{NSFontAttributeName : SanFranciscoFontWithSize25}]];
-            [self.lblPassengerZoneTemperature setAttributedText:[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%.0f", passengerTemperature] attributes:@{NSFontAttributeName : SanFranciscoFontWithSize25}]];
-        }
+- (void)awakeWithContext:(id)context {
+    [super awakeWithContext:context];
+    
+    // Configure interface objects here.
+    [self.lblDriversZone setAttributedText:[[NSAttributedString alloc] initWithString:@"Driver's zone" attributes:@{NSFontAttributeName : SanFranciscoFontWithSize9}]];
+    [self.lblPassengersZone setAttributedText:[[NSAttributedString alloc] initWithString:@"Passenger's zone" attributes:@{NSFontAttributeName : SanFranciscoFontWithSize9}]];
+    
+    if (context) {
+        driverTemperature = [context[@"driverTemperature"] floatValue];
+        passengerTemperature = [context[@"passengerTemperature"] floatValue];
+        
+        [self.lblDriverZoneTemperature setAttributedText:[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%.0f", driverTemperature] attributes:@{NSFontAttributeName : SanFranciscoFontWithSize25}]];
+        [self.lblPassengerZoneTemperature setAttributedText:[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%.0f", passengerTemperature] attributes:@{NSFontAttributeName : SanFranciscoFontWithSize25}]];
     }
-    return self;
 }
-
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
