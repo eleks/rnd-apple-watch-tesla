@@ -16,14 +16,14 @@
     VehicleRoofState roofState;
 }
 
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblOpenRoof;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblComfort;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblVentilation;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblCloseRoof;
-@property (strong, nonatomic) IBOutlet WKInterfaceButton *btnOpenRoof;
-@property (strong, nonatomic) IBOutlet WKInterfaceButton *btnComfort;
-@property (strong, nonatomic) IBOutlet WKInterfaceButton *btnVentilation;
-@property (strong, nonatomic) IBOutlet WKInterfaceButton *btnCloseRoof;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblOpenRoof;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblComfort;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblVentilation;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblCloseRoof;
+@property (weak, nonatomic) IBOutlet WKInterfaceButton *btnOpenRoof;
+@property (weak, nonatomic) IBOutlet WKInterfaceButton *btnComfort;
+@property (weak, nonatomic) IBOutlet WKInterfaceButton *btnVentilation;
+@property (weak, nonatomic) IBOutlet WKInterfaceButton *btnCloseRoof;
 
 - (IBAction)btnOpenRoofTouch;
 - (IBAction)btnComfortTouch;

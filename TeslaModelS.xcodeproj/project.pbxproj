@@ -60,6 +60,7 @@
 		40A0DB0E1A2CB8ED0010A754 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A0DB0D1A2CB8ED0010A754 /* Interface.storyboard */; };
 		40A0DB0F1A2CBAB90010A754 /* Commands.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40A0DAE61A2CB8560010A754 /* Commands.plist */; };
 		40A0DB101A2CBAB90010A754 /* Services.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40A0DAE71A2CB8560010A754 /* Services.plist */; };
+		C23CB14D1A8392AF0095E8E2 /* map_place_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E10EDCE31A31B5DA004160B9 /* map_place_icon@2x.png */; };
 		E10EDCD01A31A6ED004160B9 /* car_locked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E10EDCC91A31A6ED004160B9 /* car_locked@2x.png */; };
 		E10EDCD11A31A6ED004160B9 /* car_opened_roof@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E10EDCCA1A31A6ED004160B9 /* car_opened_roof@2x.png */; };
 		E10EDCD21A31A6ED004160B9 /* car_unlocked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E10EDCCB1A31A6ED004160B9 /* car_unlocked@2x.png */; };
@@ -807,6 +808,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23CB14D1A8392AF0095E8E2 /* map_place_icon@2x.png in Resources */,
 				40A0DB0F1A2CBAB90010A754 /* Commands.plist in Resources */,
 				40A0DB101A2CBAB90010A754 /* Services.plist in Resources */,
 				40A0DA791A2CB12E0010A754 /* Images.xcassets in Resources */,

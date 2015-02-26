@@ -19,11 +19,11 @@
     VehicleRoofState roofState;
 }
 
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblOutsideTemperature;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblFanState;
-@property (strong, nonatomic) IBOutlet WKInterfaceGroup *groupCurrentFanState;
-@property (strong, nonatomic) IBOutlet WKInterfaceGroup *groupTotalFanState;
-@property (strong, nonatomic) IBOutlet WKInterfaceButton *btnDefrosters;
-@property (strong, nonatomic) IBOutlet WKInterfaceButton *btnSetRoofState;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblOutsideTemperature;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblFanState;
+@property (weak, nonatomic) IBOutlet WKInterfaceGroup *groupCurrentFanState;
+@property (weak, nonatomic) IBOutlet WKInterfaceGroup *groupTotalFanState;
+@property (weak, nonatomic) IBOutlet WKInterfaceButton *btnDefrosters;
+@property (weak, nonatomic) IBOutlet WKInterfaceButton *btnSetRoofState;
 
 @end

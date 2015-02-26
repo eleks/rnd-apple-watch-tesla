@@ -14,13 +14,13 @@
 
 @interface GlanceController : WKInterfaceController
 
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblVehicleState;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblChargeTitle;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblCharge;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblChargeTime;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblRangeTitle;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblRange;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblMph;
-@property (strong, nonatomic) IBOutlet WKInterfaceImage *imgVehicle;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblVehicleState;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblChargeTitle;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblCharge;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblChargeTime;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblRangeTitle;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblRange;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblMph;
+@property (weak, nonatomic) IBOutlet WKInterfaceImage *imgVehicle;
 
 @end

@@ -13,10 +13,10 @@
 
 @interface TMLocationIC : WKInterfaceController
 
-@property (strong, nonatomic) IBOutlet WKInterfaceGroup *groupSpeed;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblSpeed;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblSpeedTitle;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *lblMph;
-@property (strong, nonatomic) IBOutlet WKInterfaceMap *mapVehicleLocation;
+@property (weak, nonatomic) IBOutlet WKInterfaceGroup *groupSpeed;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblSpeed;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblSpeedTitle;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblMph;
+@property (weak, nonatomic) IBOutlet WKInterfaceMap *mapVehicleLocation;
 
 @end
