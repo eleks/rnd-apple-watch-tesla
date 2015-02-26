@@ -12,25 +12,20 @@
 @implementation TMTemperatureIC
 
 
-- (instancetype)initWithContext:(id)context {
-    self = [super initWithContext:context];
-    if (self) {
-        // Initialize variables here.
-        // Configure interface objects here.
-        NSLog(@"%@ initWithContext", self);
+- (void)awakeWithContext:(id)context {
+    [super awakeWithContext:context];
+    NSLog(@"%@ initWithContext", self);
 
-        [self.lblDriversZone setAttributedText:[[NSAttributedString alloc] initWithString:@"Driver's zone" attributes:@{NSFontAttributeName : SanFranciscoFontWithSize9}]];
-        [self.lblPassengersZone setAttributedText:[[NSAttributedString alloc] initWithString:@"Passenger's zone" attributes:@{NSFontAttributeName : SanFranciscoFontWithSize9}]];
+    [self.lblDriversZone setAttributedText:[[NSAttributedString alloc] initWithString:@"Driver's zone" attributes:@{NSFontAttributeName : SanFranciscoFontWithSize9}]];
+    [self.lblPassengersZone setAttributedText:[[NSAttributedString alloc] initWithString:@"Passenger's zone" attributes:@{NSFontAttributeName : SanFranciscoFontWithSize9}]];
 
-        if (context) {
-            driverTemperature = [context[@"driverTemperature"] floatValue];
-            passengerTemperature = [context[@"passengerTemperature"] floatValue];
+    if (context) {
+        driverTemperature = [context[@"driverTemperature"] floatValue];
+        passengerTemperature = [context[@"passengerTemperature"] floatValue];
 
-            [self.lblDriverZoneTemperature setAttributedText:[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%.0f", driverTemperature] attributes:@{NSFontAttributeName : SanFranciscoFontWithSize25}]];
-            [self.lblPassengerZoneTemperature setAttributedText:[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%.0f", passengerTemperature] attributes:@{NSFontAttributeName : SanFranciscoFontWithSize25}]];
-        }
+        [self.lblDriverZoneTemperature setAttributedText:[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%.0f", driverTemperature] attributes:@{NSFontAttributeName : SanFranciscoFontWithSize25}]];
+        [self.lblPassengerZoneTemperature setAttributedText:[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%.0f", passengerTemperature] attributes:@{NSFontAttributeName : SanFranciscoFontWithSize25}]];
     }
-    return self;
 }
 
 

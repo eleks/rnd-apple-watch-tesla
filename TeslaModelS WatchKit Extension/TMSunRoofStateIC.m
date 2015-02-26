@@ -12,16 +12,11 @@
 @implementation TMSunRoofStateIC
 
 
-- (instancetype)initWithContext:(id)context {
-    self = [super initWithContext:context];
-    if (self) {
-        // Initialize variables here.
-        // Configure interface objects here.
-        NSLog(@"%@ initWithContext", self);
+- (void)awakeWithContext:(id)context {
+    [super awakeWithContext:context];
+    NSLog(@"%@ initWithContext", self);
 
-        roofState = (VehicleRoofState) [context[@"roofState"] integerValue];
-    }
-    return self;
+    roofState = (VehicleRoofState) [context[@"roofState"] integerValue];
 }
 
 
