@@ -17,18 +17,13 @@
 @implementation TMVehicleStateIC
 
 
-- (instancetype)initWithContext:(id)context {
-    self = [super initWithContext:context];
-    if (self) {
-        // Initialize variables here.
-        // Configure interface objects here.
-        NSLog(@"%@ initWithContext", self);
+- (void)awakeWithContext:(id)context {
+    [super awakeWithContext:context];
+    NSLog(@"%@ initWithContext", self);
 
-        isLocked = NO;
+    isLocked = NO;
 
-        [self getVehicleState];
-    }
-    return self;
+    [self getVehicleState];
 }
 
 
